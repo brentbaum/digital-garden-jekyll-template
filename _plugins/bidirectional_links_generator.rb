@@ -106,6 +106,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
   end
 
   def note_id_from_note(note)
+    print(note.data['title'])
     note.data['title'].bytes.join
   end
 end
